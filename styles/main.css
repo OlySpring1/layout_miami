@@ -47,7 +47,8 @@ textarea {
 li {
   list-style: none; }
 
-h1 {
+h1,
+img {
   margin: 0; }
 
 a {
@@ -350,6 +351,8 @@ a {
   @media screen and (max-width: 640px) {
     .consultation {
       grid-template-columns: 1fr; } }
+  .consultation__title {
+    margin: 0; }
 
 .form {
   display: -webkit-box;
@@ -374,7 +377,11 @@ a {
   padding: 17px;
   background-color: #f7f8ff;
   border: 1px solid #fff;
-  border-radius: 8px; }
+  border-radius: 8px;
+  max-width: 413px; }
+  @media screen and (max-width: 640px) {
+    .input {
+      min-width: 280px; } }
 
 .button {
   background: #0075ff;
@@ -382,7 +389,65 @@ a {
           box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
   border-radius: 8px;
   color: #fff;
-  font-size: 16px; }
+  font-size: 16px;
+  max-width: 413px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media screen and (max-width: 640px) {
+    .button {
+      min-width: 280px; } }
+
+.person__photo {
+  width: 153px;
+  height: 153px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block; }
+
+.person__name {
+  margin-top: 28px;
+  text-align: center; }
+
+.person__position {
+  font-size: 14px;
+  line-height: 27px;
+  color: #9fadc2;
+  text-align: center; }
+
+.person__text {
+  margin-top: 35px;
+  line-height: 27px;
+  text-align: center; }
+
+.testimonials {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 240px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center; }
+  @media screen and (max-width: 640px) {
+    .testimonials {
+      grid-template-columns: 1fr; } }
+
+.contact {
+  display: grid;
+  grid-template-columns: 152px 152px 1fr;
+  grid-gap: 20px;
+  color: #000; }
+  @media screen and (max-width: 640px) {
+    .contact {
+      grid-template-columns: 1fr;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .contact__title {
+    color: #9fadc2;
+    font-size: 14px;
+    line-height: 27px;
+    margin-top: 0; }
 
 body {
   background: #f2f2f2; }
