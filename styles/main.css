@@ -412,7 +412,8 @@ a {
 
 .title {
   position: relative;
-  margin-bottom: 58px; }
+  margin-bottom: 58px;
+  top: 0.5em; }
   @media screen and (max-width: 640px) {
     .title {
       font-size: 48px;
